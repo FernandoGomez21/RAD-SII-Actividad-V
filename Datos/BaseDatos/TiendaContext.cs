@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Datos.BaseDatos.Models;
 
 namespace Datos.BaseDatos
 {
@@ -21,6 +22,9 @@ namespace Datos.BaseDatos
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>(); //No queremos Nombres en plural
         }
 
+       public DbSet<Peliculas> Peliculas { get; set;}
+        public DbSet<Clientes> Clientes { get; set;}
+        public DbSet<Renta> Renta { get; set;}
 
 
     }
