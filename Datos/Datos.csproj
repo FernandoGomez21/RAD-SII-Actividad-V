@@ -55,6 +55,11 @@
     <Compile Include="BaseDatos\Models\Peliculas.cs" />
     <Compile Include="BaseDatos\Models\Renta.cs" />
     <Compile Include="BaseDatos\TiendaContext.cs" />
+    <Compile Include="Core\IRepository.cs" />
+    <Compile Include="Core\IUnitOfWork.cs" />
+    <Compile Include="Core\Repository.cs" />
+    <Compile Include="Core\UnitOfWork.cs" />
+    <Compile Include="DPeliculas.cs" />
     <Compile Include="Migrations\202403220424126_addtablasenGeneral.cs" />
     <Compile Include="Migrations\202403220424126_addtablasenGeneral.Designer.cs">
       <DependentUpon>202403220424126_addtablasenGeneral.cs</DependentUpon>
