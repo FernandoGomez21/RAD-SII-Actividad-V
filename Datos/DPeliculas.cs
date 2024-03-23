@@ -25,12 +25,12 @@ namespace Datos
         public decimal PrecioRenta { get; set; }
         public bool Estado { get; set; }
 
-        public List<Peliculas> categoriaClientesTodas()
+        public List<Peliculas> PeliculasTodas()
         {
             return _unitOfWork.Repository<Peliculas>().Consulta().ToList();
         }
 
-        public int GuardarCategoria(Peliculas categoria)
+        public int GuardarPeliculas(Peliculas categoria)
         {
             if (categoria.PeliculasId == 0)
             {
@@ -57,7 +57,7 @@ namespace Datos
 
         }
 
-        public int EliminarCategoria(int categoriaId)
+        public int EliminarPeliculas(int categoriaId)
         {
             var CategoriaInDb = _unitOfWork.Repository<Peliculas>().Consulta().FirstOrDefault(c => c.PeliculasId == categoriaId);
             if (CategoriaInDb != null)

@@ -16,7 +16,7 @@ namespace RAD_SII_Actividad_V
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MenuPrin());
         }
     }
 }
