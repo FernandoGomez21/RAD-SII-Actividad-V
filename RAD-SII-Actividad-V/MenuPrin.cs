@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Datos.BaseDatos.Models;
 
 namespace RAD_SII_Actividad_V
 {
-    public partial class Form1 : Form
+    public partial class MenuPrin : Form
     {
-        public Form1()
+        public MenuPrin()
         {
             InitializeComponent();
+        }
+
+        private void gruposDeDescuentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PeliculasV peliculas = new PeliculasV();
+            peliculas.Show();
         }
     }
 }
