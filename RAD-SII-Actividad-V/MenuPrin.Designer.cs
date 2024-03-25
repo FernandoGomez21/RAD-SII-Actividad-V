@@ -65,6 +65,7 @@
             this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.categoriasToolStripMenuItem.Text = "Clientes";
             this.categoriasToolStripMenuItem.ToolTipText = "Todas las categorias de clientes";
+            this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem1
             // 

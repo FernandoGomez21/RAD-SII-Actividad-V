@@ -59,6 +59,7 @@
     <Compile Include="Core\IUnitOfWork.cs" />
     <Compile Include="Core\Repository.cs" />
     <Compile Include="Core\UnitOfWork.cs" />
+    <Compile Include="DClientes.cs" />
     <Compile Include="DPeliculas.cs" />
     <Compile Include="Migrations\202403220424126_addtablasenGeneral.cs" />
     <Compile Include="Migrations\202403220424126_addtablasenGeneral.Designer.cs">

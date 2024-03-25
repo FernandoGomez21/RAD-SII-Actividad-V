@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientesV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesV.Designer.cs">
+      <DependentUpon>ClientesV.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClientesV.resx">
+      <DependentUpon>ClientesV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrin.resx">
       <DependentUpon>MenuPrin.cs</DependentUpon>
     </EmbeddedResource>
