@@ -23,5 +23,11 @@ namespace RAD_SII_Actividad_V
             PeliculasV peliculas = new PeliculasV();
             peliculas.Show();
         }
+
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ClientesV peliculas = new ClientesV();
+            peliculas.Show();
+        }
     }
 }
