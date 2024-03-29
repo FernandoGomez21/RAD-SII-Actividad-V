@@ -27,7 +27,28 @@ namespace Negocio
         {
             return dPeliculas.PeliculasTodas().Where(c => c.Estado == true).ToList();
         }
+        public List<CargarCombos> CargaCombo()
+        {
+            List<CargarCombos> Datos = new List<CargarCombos>();
+            var categorias = CategoriasActivas().Select(c => new
+            {
+                c.PeliculasId,
+                c.Nombre,
+                c.PrecioRenta,
+            })
+                                      .ToList();
+            foreach (var item in categorias)
+            {
+                Datos.Add(new CargarCombos()
+                {
+                    Valor = item.PeliculasId,
+                    Nombres= item.Nombre,
+                    PrecioRenta = item.PrecioRenta
+                });;
+            }
 
+            return Datos;
+        }
         public int Agregarpelicula(Peliculas Peliculas)
         {
             return dPeliculas.GuardarPeliculas(Peliculas);

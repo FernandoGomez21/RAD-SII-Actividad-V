@@ -61,9 +61,14 @@
     <Compile Include="Core\UnitOfWork.cs" />
     <Compile Include="DClientes.cs" />
     <Compile Include="DPeliculas.cs" />
+    <Compile Include="DRenta.cs" />
     <Compile Include="Migrations\202403220424126_addtablasenGeneral.cs" />
     <Compile Include="Migrations\202403220424126_addtablasenGeneral.Designer.cs">
       <DependentUpon>202403220424126_addtablasenGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403250436283_AddActivoEnClaseRenta.cs" />
+    <Compile Include="Migrations\202403250436283_AddActivoEnClaseRenta.Designer.cs">
+      <DependentUpon>202403250436283_AddActivoEnClaseRenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +80,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202403220424126_addtablasenGeneral.resx">
       <DependentUpon>202403220424126_addtablasenGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403250436283_AddActivoEnClaseRenta.resx">
+      <DependentUpon>202403250436283_AddActivoEnClaseRenta.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

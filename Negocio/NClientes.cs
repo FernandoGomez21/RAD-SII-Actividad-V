@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Datos.BaseDatos.Models;
 using Datos;
+using Negocio.Comun;
 
 namespace Negocio
 {
@@ -26,7 +27,26 @@ namespace Negocio
         {
             return dclienetes.ClientesTodas().Where(c => c.Estado == true).ToList();
         }
+        public List<CargarCombos> CargaCombo()
+        {
+            List<CargarCombos> Datos = new List<CargarCombos>();
+            var categorias = ClientesActivos().Select(c => new
+            {
+                c.clienteId,
+                c.Nombres,
+            })
+                                      .ToList();
+            foreach (var item in categorias)
+            {
+                Datos.Add(new CargarCombos()
+                {
+                    Valor = item.clienteId,
+                    Nombre = item.Nombres
+                });
+            }
 
+            return Datos;
+        }
         public int AgregarClienets(Clientes Peliculas)
         {
             return dclienetes.GuardarClientes(Peliculas);
