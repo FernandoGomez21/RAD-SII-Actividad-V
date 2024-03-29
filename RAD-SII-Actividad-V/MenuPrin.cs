@@ -29,5 +29,11 @@ namespace RAD_SII_Actividad_V
             ClientesV peliculas = new ClientesV();
             peliculas.Show();
         }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RentaId renta = new RentaId();
+            renta.Show();
+        }
     }
 }

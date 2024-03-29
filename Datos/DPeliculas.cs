@@ -67,8 +67,5 @@ namespace Datos
             }
             return 0;
         }
-
-
-
     }
 }

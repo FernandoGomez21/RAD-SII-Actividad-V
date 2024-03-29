@@ -22,5 +22,6 @@ namespace Datos.BaseDatos.Models
         public int Cantidad { get; set; }
         public decimal PrecioRenta { get; set; }
 
+        public bool Activo { get; set; }
     }
 }
